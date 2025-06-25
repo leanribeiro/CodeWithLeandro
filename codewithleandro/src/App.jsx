@@ -2,10 +2,12 @@ import "./App.css";
 
 function App() {
   return (
-    <Router>
-      <Navbar />
-      <AppRoutes />
-    </Router>
+    <AppProvider>
+      <Router>
+        <Navbar />
+        <AppRoutes />
+      </Router>
+    </AppProvider>
   );
 }
 
